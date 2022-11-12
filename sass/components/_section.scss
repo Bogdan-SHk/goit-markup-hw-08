@@ -1,6 +1,11 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &--without-padding-bottom {
         padding-bottom: 0;
@@ -10,4 +15,8 @@
         background-color: $button-background-color;
     }
 }
-
+.section--none {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
