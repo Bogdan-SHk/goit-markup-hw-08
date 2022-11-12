@@ -1,0 +1,33 @@
+.clients-list {
+    display: flex;
+}
+
+.clients-list__item {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    max-width: 170px;
+
+    transition: border-color $transition-duration $transition-timing-function;
+
+    &:hover {
+        border-color: $accent-color;
+    }
+}
+
+.clients-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+
+    fill: #afb1b8;
+
+    transition: fill $transition-duration $transition-timing-function;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+

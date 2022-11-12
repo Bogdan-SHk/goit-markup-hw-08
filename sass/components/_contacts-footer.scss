@@ -1,0 +1,25 @@
+.contacts-footer {
+    font-style: normal;
+    line-height: 1.71;
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+
+        transition: color $transition-duration $transition-timing-function;
+    }
+
+    &__link--white {
+        color: $primary-white-color;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $accent-color;
+    }
+}
+

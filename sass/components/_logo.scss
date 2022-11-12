@@ -1,0 +1,25 @@
+.logo {
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    
+    &__accent {
+        color: $accent-color;
+    }
+
+    &--header {
+        padding-top: 24px;
+        padding-bottom: 25px;
+
+        color: $primary-black-color;
+    }
+
+    &--footer {
+        display: inline-block;
+        margin-bottom: 20px;
+
+        color: $primary-white-color;
+    }
+}

@@ -1,0 +1,13 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &--without-padding-bottom {
+        padding-bottom: 0;
+    }
+
+    &--background-grey {
+        background-color: $button-background-color;
+    }
+}
+
