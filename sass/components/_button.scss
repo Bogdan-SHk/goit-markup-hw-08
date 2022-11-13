@@ -28,7 +28,9 @@
     }
 
     &--bigly-width {
-        width: 216px;
+        @media screen and (min-width: 1200px) {
+            width: 216px;
+        }
     }
 
     &--gap {

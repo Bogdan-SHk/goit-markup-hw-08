@@ -8,7 +8,9 @@
     }
 
     &--without-padding-bottom {
-        padding-bottom: 0;
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 0;
+        }
     }
 
     &--background-grey {

@@ -1,15 +1,17 @@
 .features-list {
-    display: flex;
+    // display: flex;
 
-    &__item {
-        flex-basis: calc((100% - 90px) / 4);
-    }
+    // &__item {
+    //     flex-basis: calc((100% - 90px) / 4);
+    // }
 
     &__tumb {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 270px;
+        // width: 270px;
+        // height: 120px;
+        width: 450px;
         height: 120px;
         margin-bottom: 30px;
 
@@ -21,14 +23,23 @@
         margin-bottom: 10px;
 
         color: $secondary-text-color;
-
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
     }
 
     &__text {
-        line-height: 1.71;
+        line-height: 1.71;  
+    }
+    
+    &__text:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
     }
 }
 
