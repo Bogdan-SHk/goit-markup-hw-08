@@ -179,7 +179,8 @@
           <ul class="team-list">
             <li class="team-list__item">
               <img
-                srcset="./images/mobile-photo-one@1.jpg 1x, ./images/mobile-photo-one@1.jpg 2x"
+                class="team-list__mobile-img"
+                srcset="./images/mobile-photo-one@1x.jpg 1x, ./images/mobile-photo-one@2x.jpg 2x"
                 src="./images/mobile-photo-one@1x.jpg"
                 alt="Чоловік в окулярах"
                 width="450"
@@ -236,7 +237,13 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/photo-two.jpg" alt="Жінка в окулярах та костюмі" width="270" />
+              <img
+                class="team-list__mobile-img"
+                srcset="./images/mobile-photo-two@1x.jpg 1x, ./images/mobile-photo-two@2x.jpg 2x"
+                src="./images/mobile-photo-two@1x.jpg"
+                alt="Жінка в окулярах та костюмі"
+                width="450"
+              />
               <div class="team-list__tumb">
                 <h3 class="team-list__member">Ольга Рєпіна</h3>
                 <p class="team-list__text" lang="en">Frontend Developer</p>
@@ -289,7 +296,16 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/photo-three.jpg" alt="Чоловік в рубашці" width="270" />
+              <img
+                class="team-list__mobile-img"
+                srcset="
+                  ./images/mobile-photo-three@1x.jpg 1x,
+                  ./images/mobile-photo-three@2x.jpg 2x
+                "
+                src="./images/mobile-photo-three@1x.jpg"
+                alt="Чоловік в рубашці"
+                width="450"
+              />
               <div class="team-list__tumb">
                 <h3 class="team-list__member">Микола Тарасов</h3>
                 <p class="team-list__text" lang="en">Marketing</p>
@@ -342,7 +358,13 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/photo-four.jpg" alt="Чоловік в окулярах" width="270" />
+              <img
+                class="team-list__mobile-img"
+                srcset="./images/mobile-photo-four@1x.jpg 1x, ./images/mobile-photo-four@2x.jpg 2x"
+                src="./images/mobile-photo-four@1x.jpg"
+                alt="Чоловік в окулярах"
+                width="450"
+              />
               <div class="team-list__tumb">
                 <h3 class="team-list__member">Михайло Єрмаков</h3>
                 <p class="team-list__text" lang="en">UI Designer</p>
@@ -473,7 +495,7 @@
         </div>
         <div class="page-footer__social-links">
           <span class="page-footer__social-title">приєднуйтесь</span>
-          <ul class="social-list">
+          <ul class="social-list social-list--footer">
             <li>
               <a
                 class="social-list__link social-list__link--dark"

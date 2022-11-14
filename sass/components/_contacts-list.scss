@@ -26,10 +26,10 @@
 
     transition: color $transition-duration $transition-timing-function;
 
-    // &:hover,
-    // &:focus {
-    //     color: $accent-color;
-    // }
+    &:hover,
+    &:focus {
+         color: $accent-color;
+    }
 }
 
 @media screen and (max-width: 767px){

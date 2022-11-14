@@ -1,11 +1,13 @@
 .clients-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .clients-list__item {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    max-width: 170px;
+    // max-width: 170px;
+    max-width: 210px;
 
     transition: border-color $transition-duration $transition-timing-function;
 
@@ -18,7 +20,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    // width: 170px;
+    width: 210px;
     height: 92px;
 
     fill: #afb1b8;

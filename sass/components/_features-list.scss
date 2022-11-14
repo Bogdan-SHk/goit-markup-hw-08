@@ -2,8 +2,14 @@
     // display: flex;
 
     // &__item {
-    //     flex-basis: calc((100% - 90px) / 4);
+    // //     flex-basis: calc((100% - 90px) / 4);
     // }
+
+    &__item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
 
     &__tumb {
         display: flex;
@@ -33,13 +39,7 @@
     }
 
     &__text {
-        line-height: 1.71;  
-    }
-    
-    &__text:not(:last-child) {
-        @media screen and (max-width: 767px) {
-            margin-bottom: 30px;
-        }
+        line-height: 1.71; 
     }
 }
 

@@ -2,6 +2,10 @@
     font-style: normal;
     line-height: 1.71;
 
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+
     &__item:not(:last-child) {
         margin-bottom: 9px;
     }

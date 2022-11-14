@@ -22,37 +22,57 @@
         <a href="./index.html" class="logo logo--header"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <nav class="page-header__navigation">
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link">Студія</a>
+        <button type="button" class="button-menu button-menu--is-open">
+          <svg class="button-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container">
+          <nav class="page-header__navigation">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="./index.html" class="nav-list__link">Студія</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="./portfolio.html" class="nav-list__link nav-list__link--active"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <a href="tel:380961111111" class="contacts-list__tel">
+                <svg class="contacts-list__icon-header" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
-            <li class="nav-list__item">
-              <a href="./portfolio.html" class="nav-list__link nav-list__link--active">Портфоліо</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="" class="nav-list__link">Контакти</a>
+            <li class="contacts-list__item">
+              <a href="mailto:info@devstudio.com" class="contacts-list__mail">
+                <svg class="contacts-list__icon-header" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="contacts-list">
-          <li class="contacts-list__item">
-            <a href="mailto:info@devstudio.com" class="contacts-list__mail">
-              <svg class="contacts-list__icon-header" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-list__item">
-            <a href="tel:380961111111" class="contacts-list__tel">
-              <svg class="contacts-list__icon-header" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="social-menu">
+            <li class="social-menu__item"><a class="social-menu__link" href="">Instagram</a></li>
+            <li class="social-menu__item"><a class="social-menu__link" href="">Twitter</a></li>
+            <li class="social-menu__item"><a class="social-menu__link" href="">Facebook</a></li>
+            <li class="social-menu__item"><a class="social-menu__link" href="">LinkedIn</a></li>
+          </ul>
+          <button type="button" class="button-menu button-menu--is-close">
+            <svg class="button-menu__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -61,21 +81,21 @@
           <!-- Фільтр -->
           <h1 class="visually-hidden">Приклади робіт</h1>
           <ul class="filter-list">
-            <li>
+            <li class="filter-list__item">
               <button type="button" class="filter-list__button filter-list__button--smaller">
                 Усі
               </button>
             </li>
-            <li>
+            <li class="filter-list__item">
               <button type="button" class="filter-list__button">Веб-сайти</button>
             </li>
-            <li>
+            <li class="filter-list__item">
               <button type="button" class="filter-list__button">Додатки</button>
             </li>
-            <li>
+            <li class="filter-list__item">
               <button type="button" class="filter-list__button">Дизайн</button>
             </li>
-            <li>
+            <li class="filter-list__item">
               <button type="button" class="filter-list__button">Маркетинг</button>
             </li>
           </ul>
@@ -290,7 +310,7 @@
         </div>
         <div class="page-footer__social-links">
           <span class="page-footer__social-title">приєднуйтесь</span>
-          <ul class="social-list">
+          <ul class="social-list social-list--footer">
             <li>
               <a
                 class="social-list__link social-list__link--dark"
@@ -362,5 +382,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
