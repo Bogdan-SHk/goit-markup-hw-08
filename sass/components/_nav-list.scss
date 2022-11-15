@@ -1,59 +1,63 @@
 .nav-list {
-    // display: flex;
-    // margin-left: 93px;
-
-    // &__item:not(:last-child) {
-    //     margin-right: 50px;
-    // }
     @media screen and (max-width: 767px) {
         &__item {
             margin-bottom: 32px;
         }
+
         &__item:last-child {
             margin-bottom: 306px;
         }
     }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: 88px;
+        gap: 50px;
+    }
+
+    // margin-left: 93px;
 }
+
  .nav-list__link {
-    //  display: block;
-    //  padding-top: 32px;
-    //  padding-bottom: 32px;
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 
-     color: $secondary-text-color;
-     font-weight: 500;
-     line-height: 1.14;
-     letter-spacing: 0.02em;
-     text-decoration: none;
+    transition: color $transition-duration $transition-timing-function;
 
-     transition: color $transition-duration $transition-timing-function;
-
-     &:hover,
-     &:focus {
+    &:hover,
+    &:focus {
         color: $accent-color;
     }
 
-    @media screen and (max-width: 767px) {
-        font-size: 40px;
-        line-height: 1.18;
-
+    @media screen and (min-width: 768px) {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-size: 14px;
+        line-height: 1.14;
     }
  }
 
 .nav-list__link--active {
-    // position: relative;
     color: $accent-color;
 
-    // &::after {
-    //     content: "";
+    @media screen and (min-width: 768px) {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 4px;
     
-    //     position: absolute;
-    //     left: 0;
-    //     bottom: 0;
-    //     display: block;
-    //     width: 100%;
-    //     height: 4px;
-    
-    //     background-color: $accent-color;
-    //     border-radius: 2px;
-    // }
+            background-color: $accent-color;
+            border-radius: 2px;
+        }
+    }
 }

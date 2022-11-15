@@ -2,15 +2,20 @@
     border-bottom: 1px solid #ECECEC;
 
     &__container {
-        position: relative;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+
+        @media screen and (max-width: 767px) {
+            position: relative;
+            justify-content: space-between;
+        }
     }
 
-    // &__navigation {
-    //     display: flex;
-    // }
+    &__navigation {
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
 }
 
 .button-menu {
@@ -32,26 +37,33 @@
 }
 
 .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 796px;
-    padding: 48px 40px;
-    z-index: 999;
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 796px;
+        padding: 48px 40px;
+        z-index: 999;
 
-    background-color: $primary-white-color;
+        background-color: $primary-white-color;
 
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
 
-    transition: opacity $transition-duration $transition-timing-function;
+        transition: opacity $transition-duration $transition-timing-function;
 
-    &.is-open {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+        &.is-open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -59,5 +71,9 @@
     position: absolute;
     top: 10px;
     right: 15px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
