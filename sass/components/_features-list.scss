@@ -1,7 +1,15 @@
 .features-list {
-    // display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-    // &__item {
+    &__item {
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+    }
+
     // //     flex-basis: calc((100% - 90px) / 4);
     // }
 
@@ -15,14 +23,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        // width: 270px;
-        // height: 120px;
         width: 450px;
         height: 120px;
         margin-bottom: 30px;
 
         background-color: $button-background-color;
         border-radius: 4px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+        // width: 270px;
     }
 
     &__title {
@@ -32,9 +43,10 @@
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
+        text-align: center;
 
-        @media screen and (max-width: 767px) {
-            text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: left;
         }
     }
 

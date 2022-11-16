@@ -185,6 +185,13 @@
                 alt="Чоловік в окулярах"
                 width="450"
               />
+              <img
+                class="team-list__tablet-img"
+                srcset="./images/tablet-photo-one@1x.jpg 1x, ./images/tablet-photo-one@2x.jpg 2x"
+                src="./images/tablet-photo-one@1x.jpg"
+                alt="Чоловік в окулярах"
+                width="354"
+              />
               <div class="team-list__tumb">
                 <h3 class="team-list__member">Ігор Дем'яненко</h3>
                 <p class="team-list__text" lang="en">Product Designer</p>
@@ -243,6 +250,13 @@
                 src="./images/mobile-photo-two@1x.jpg"
                 alt="Жінка в окулярах та костюмі"
                 width="450"
+              />
+              <img
+                class="team-list__tablet-img"
+                srcset="./images/tablet-photo-two@1x.jpg 1x, ./images/tablet-photo-two@2x.jpg 2x"
+                src="./images/tablet-photo-two@1x.jpg"
+                alt="Жінка в окулярах та костюмі"
+                width="354"
               />
               <div class="team-list__tumb">
                 <h3 class="team-list__member">Ольга Рєпіна</h3>
@@ -306,6 +320,16 @@
                 alt="Чоловік в рубашці"
                 width="450"
               />
+              <img
+                class="team-list__tablet-img"
+                srcset="
+                  ./images/tablet-photo-three@1x.jpg 1x,
+                  ./images/tablet-photo-three@2x.jpg 2x
+                "
+                src="./images/tablet-photo-three@1x.jpg"
+                alt="Чоловік в рубашці"
+                width="354"
+              />
               <div class="team-list__tumb">
                 <h3 class="team-list__member">Микола Тарасов</h3>
                 <p class="team-list__text" lang="en">Marketing</p>
@@ -364,6 +388,13 @@
                 src="./images/mobile-photo-four@1x.jpg"
                 alt="Чоловік в окулярах"
                 width="450"
+              />
+              <img
+                class="team-list__tablet-img"
+                srcset="./images/tablet-photo-four@1x.jpg 1x, ./images/tablet-photo-four@2x.jpg 2x"
+                src="./images/tablet-photo-four@1x.jpg"
+                alt="Чоловік в окулярах"
+                width="354"
               />
               <div class="team-list__tumb">
                 <h3 class="team-list__member">Михайло Єрмаков</h3>
@@ -467,80 +498,82 @@
     <!-- Підвал -->
     <footer class="page-footer">
       <div class="page-footer__container container">
-        <div>
-          <a href="./index.html" class="logo logo--footer"
-            ><span class="logo__accent">Web</span>Studio</a
-          >
-          <address>
-            <ul class="contacts-footer">
-              <li class="contacts-footer__item">
+        <div class="page-footer__tablet-container">
+          <div>
+            <a href="./index.html" class="logo logo--footer"
+              ><span class="logo__accent">Web</span>Studio</a
+            >
+            <address>
+              <ul class="contacts-footer">
+                <li class="contacts-footer__item">
+                  <a
+                    href="https://goo.gl/maps/44BGPZHSNG9RyHG87"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="contacts-footer__link contacts-footer__link--white"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="contacts-footer__item">
+                  <a href="mailto:info@devstudio.com" class="contacts-footer__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts-footer__item">
+                  <a href="tel:380961111111" class="contacts-footer__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="page-footer__social-links">
+            <span class="page-footer__social-title">приєднуйтесь</span>
+            <ul class="social-list social-list--footer">
+              <li>
                 <a
-                  href="https://goo.gl/maps/44BGPZHSNG9RyHG87"
-                  target="_blank"
+                  class="social-list__link social-list__link--dark"
+                  href=""
                   rel="noopener noreferrer nofollow"
-                  class="contacts-footer__link contacts-footer__link--white"
-                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts-footer__item">
-                <a href="mailto:info@devstudio.com" class="contacts-footer__link"
-                  >info@devstudio.com</a
+              <li>
+                <a
+                  class="social-list__link social-list__link--dark"
+                  href=""
+                  rel="noopener noreferrer nofollow"
                 >
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts-footer__item">
-                <a href="tel:380961111111" class="contacts-footer__link">+38 096 111 11 11</a>
+              <li>
+                <a
+                  class="social-list__link social-list__link--dark"
+                  href=""
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-list__link social-list__link--dark"
+                  href=""
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="page-footer__social-links">
-          <span class="page-footer__social-title">приєднуйтесь</span>
-          <ul class="social-list social-list--footer">
-            <li>
-              <a
-                class="social-list__link social-list__link--dark"
-                href=""
-                rel="noopener noreferrer nofollow"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="social-list__link social-list__link--dark"
-                href=""
-                rel="noopener noreferrer nofollow"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="social-list__link social-list__link--dark"
-                href=""
-                rel="noopener noreferrer nofollow"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="social-list__link social-list__link--dark"
-                href=""
-                rel="noopener noreferrer nofollow"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="form-footer">
           <p class="form-footer__text">Підпишіться на розсилку</p>
