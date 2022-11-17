@@ -6,17 +6,28 @@
         margin-left: 97px;
     }
 
+    @media screen and (min-width: 1200px) {
+        flex-direction: row-reverse;
+        gap: 30px;
+        margin-left: 320px;
+    }
+
     &__icon-header {
         fill: currentColor;
         margin-right: 8px;
 
-        // margin-right: 10px;
+        @media screen and (min-width: 1200px) {
+            margin-right: 10px;
+            height: 16px;
+        }
+    }
+    
+    &__icon-header--wider {
+        @media screen and (min-width: 1200px) {
+            width: 16px;
+        }  
     }
 }
-
-// .contacts-list__item + .contacts-list__item {
-//     margin-left: 50px;
-// }
 
 .contacts-list__tel {
     font-size: 34px;
@@ -54,7 +65,10 @@
         line-height: 1.17;
     }
     
-    // line-height: 1.14;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
 }
 
 @media screen and (max-width: 767px){

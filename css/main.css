@@ -191,12 +191,24 @@ textarea {
   line-height: 1.17;
   text-decoration: none;
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 .logo__accent {
   color: #2196F3;
 }
 .logo--header {
   padding: 16px 0;
   color: #000000;
+}
+@media screen and (min-width: 1200px) {
+  .logo--header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .logo--footer {
   display: inline-block;
@@ -217,6 +229,11 @@ textarea {
     display: flex;
     margin-left: 88px;
     gap: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    margin-left: 93px;
   }
 }
 
@@ -270,9 +287,27 @@ textarea {
     margin-left: 97px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    flex-direction: row-reverse;
+    gap: 30px;
+    margin-left: 320px;
+  }
+}
 .contacts-list__icon-header {
   fill: currentColor;
   margin-right: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list__icon-header {
+    margin-right: 10px;
+    height: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list__icon-header--wider {
+    width: 16px;
+  }
 }
 
 .contacts-list__tel {
@@ -311,6 +346,13 @@ textarea {
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list__mail,
+.contacts-list__tel {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -380,7 +422,12 @@ textarea {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/img-overlay.png), url(../images/banner.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/banner@1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/banner@2x.jpg);
   }
 }
 .banner__title {
@@ -523,16 +570,6 @@ textarea {
 @media screen and (min-width: 768px) {
   .team-list__item {
     flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 768px) {
-  .team-list__mobile-img {
-    display: none;
-  }
-}
-@media screen and (max-width: 767px), (min-width: 1200px) {
-  .team-list__tablet-img {
-    display: none;
   }
 }
 .team-list__tumb {
@@ -797,16 +834,6 @@ textarea {
 .work-list__img-container {
   position: relative;
   overflow: hidden;
-}
-@media screen and (min-width: 768px) {
-  .work-list__mobile-img {
-    display: none;
-  }
-}
-@media screen and (max-width: 767px), (min-width: 1200px) {
-  .work-list__tablet-img {
-    display: none;
-  }
 }
 .work-list__overlay {
   position: absolute;
