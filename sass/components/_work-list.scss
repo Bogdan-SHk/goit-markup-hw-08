@@ -13,18 +13,6 @@
         overflow: hidden;
     }
 
-    &__mobile-img {
-        @media screen and (min-width: 768px) {
-            display: none;
-        }
-    }
-
-    &__tablet-img {
-        @media screen and (max-width: 767px), (min-width: 1200px) {
-            display: none;
-        }
-    }
-
     &__overlay {
         position: absolute;
         
