@@ -7,10 +7,9 @@
         text-align: center;
         @media screen and (min-width: 1200px) {
             text-align: left;
+            display: flex;
+            align-items: baseline;
         }
-        
-        // display: flex;
-        // align-items: baseline;
     }
 
     &__tablet-container {
@@ -22,10 +21,10 @@
         }
     }
 
-    // &__social-links {
-    //     margin-left: 93px;
-    //     margin-right: 93px;
-    // }
+    &__social-links {
+        margin-left: 93px;
+        margin-right: 93px;
+    }
 
     &__social-title {
         display: block;
