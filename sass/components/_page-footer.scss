@@ -13,17 +13,23 @@
     }
 
     &__tablet-container {
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @media screen and (min-width: 768px) {
             display: flex;
-            gap: 165px;
             align-items: baseline;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            gap: 165px;
             justify-content: center;
         }
     }
 
     &__social-links {
-        margin-left: 93px;
-        margin-right: 93px;
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+            margin-right: 93px;
+        }
+    
     }
 
     &__social-title {
