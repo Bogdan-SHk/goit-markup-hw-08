@@ -194,7 +194,7 @@ textarea {
     top: 0;
     left: 0;
     width: 100%;
-    height: 796px;
+    min-height: 796px;
     padding: 48px 40px;
     z-index: 999;
     background-color: #FFFFFF;
@@ -373,6 +373,7 @@ textarea {
 @media screen and (max-width: 767px) {
   .social-menu {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
   }
 }
@@ -503,7 +504,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
@@ -655,8 +656,17 @@ textarea {
 .clients-list__item {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  max-width: 210px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 480px) {
+  .clients-list__item {
+    max-width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients-list__item {
@@ -676,10 +686,15 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
+  min-width: 128px;
   height: 92px;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .clients-list__link {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients-list__link {
@@ -777,7 +792,7 @@ textarea {
 }
 
 .form-footer__input {
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -831,11 +846,13 @@ textarea {
   .filter-list__item:not(:last-child) {
     margin-right: 8px;
   }
-  .filter-list__item:nth-child(3) {
-    margin-right: 35px;
-  }
   .filter-list__item:nth-child(-n+3) {
     margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 377px) and (max-width: 767px) {
+  .filter-list__item:nth-child(3) {
+    margin-right: 35px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -890,15 +907,27 @@ textarea {
 }
 .work-list__overlay {
   position: absolute;
-  padding: 77px 24px;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
+  padding-left: 24px;
   color: #FFFFFF;
   background-color: rgba(33, 150, 243, 0.9);
   font-size: 18px;
   line-height: 1.56;
+  vertical-align: middle;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 480px) {
+  .work-list__overlay {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .work-list__overlay {
+    padding: 77px 24px;
+  }
 }
 @media screen and (min-width: 768px) {
   .work-list__overlay {
@@ -907,7 +936,8 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .work-list__overlay {
-    padding: 63px 24px;
+    padding-top: 63px;
+    padding-bottom: 63px;
   }
 }
 .work-list__description {
@@ -975,7 +1005,7 @@ textarea {
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 450px;
+  min-width: 290px;
   height: 609px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -983,6 +1013,11 @@ textarea {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1047,7 +1082,7 @@ textarea {
 }
 
 .form-modal__input {
-  width: 370px;
+  max-width: 370px;
   height: 40px;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -1077,7 +1112,7 @@ textarea {
 }
 
 .form-modal__textarea {
-  width: 370px;
+  max-width: 370px;
   height: 120px;
   padding: 12px 16px;
   margin-bottom: 20px;
@@ -1125,13 +1160,17 @@ textarea {
 }
 
 .form-modal__label-policy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 480px) {
+  .form-modal__label-policy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-modal__label-policy {
